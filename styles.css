@@ -1,6 +1,7 @@
 ul {
   list-style-type: none;
   padding: 0em 1em 1em 1em;
+  margin-bottom: 0.3em;
 }
 
 ul li {
@@ -42,4 +43,8 @@ span {
   font-family: courier;
   background: black;
   color: white;
+}
+
+div {
+    margin-bottom: 1.8em;
 }
