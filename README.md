@@ -1,4 +1,4 @@
-# deployed_projects
+# Deployed Projects
 
 Some of my deployed projects with GitHub Pages
 
