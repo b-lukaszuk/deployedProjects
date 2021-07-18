@@ -375,8 +375,8 @@ function getUniqueYears(tabFilmow) {
 
     let unikalneLata = [];
 
-    for (let i = 0; i < listOfMovies.length; i++) {
-        let rok = getYear(listOfMovies[i]);
+    for (let i = 0; i < tabFilmow.length; i++) {
+        let rok = getYear(tabFilmow[i]);
         // tudziez mozna probowac wziac wszystkie lata i zrobic z tego set-a
         // (JS ma chyba sety)
         // przeslany do porownania rok jest zawsze 4 cyfrowy (string postaci "[0-9]{4}")
