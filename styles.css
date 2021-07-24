@@ -45,3 +45,7 @@ p {
 div {
   margin-bottom: 1.8em;
 }
+
+noscript {
+    font-size: 3em;
+}
