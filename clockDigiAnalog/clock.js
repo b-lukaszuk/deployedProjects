@@ -147,7 +147,7 @@ function wspPunktuNaOkregu(kat, r = rTarcza - wielkCzcionki) {
     nowyY = ySrodek - nowyY;
 
     // zwracamy tablice z wartosciami zaokraglonymi do pelnych pixeli
-    return [Math.round(nowyX, 0), Math.round(nowyY, 0)];
+    return [nowyX, nowyY];
 }
 
 // zwraca: {Int|Float} (1-12), aktualna godzina
