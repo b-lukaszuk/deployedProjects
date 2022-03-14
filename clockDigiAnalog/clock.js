@@ -4,7 +4,7 @@
 const xSrodek = 250; // wsp X dla srodka tarczy zegara (w canvas2)
 const ySrodek = 250; // wsp Y dla srodka tarczy zegara (w canvas2)
 const rTarcza = 245; // promien tarczy zegara
-const wielkCzcionki = 38;
+const wielkCzcionki = 46;
 const rodzCzcionkiArab = "Calibri"; // rodzaj czcionki do cyfr rzymskich
 const rodzCzcionkiRzym = "Trajan"; // rodzaj czcionki do cyfr rzymskich
 const dlWskazGodz = 100;
