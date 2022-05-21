@@ -142,9 +142,9 @@ function getLi(h2Text, ghRepoHttp, deployedVersionHttp) {
     return (
         "<li>" +
         getH2(h2Text) +
-        getHyperLink("GitHub repo", ghRepoHttp) +
+        getHyperLink("See code", ghRepoHttp) +
         getSpanSep() +
-        getHyperLink("See online", deployedVersionHttp) +
+        getHyperLink("See app online", deployedVersionHttp) +
         "</li>"
     );
 }
