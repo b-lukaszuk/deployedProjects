@@ -131,7 +131,7 @@ function getHyperLink(displayedText, http) {
 }
 
 function getH2(displayedText) {
-    return "<h2>" + displayedText + "<h2>";
+    return "<h2>" + displayedText + "</h2>";
 }
 
 function getSpanSep() {
@@ -156,7 +156,7 @@ function getUl(lstOfDeployedProjects) {
     lstOfDeployedProjects.forEach((p) => {
         content += getLi(p[0], p[1], p[2]);
     });
-    return "<ul>" + content + "<ul>";
+    return "<ul>" + content + "</ul>";
 }
 
 ///////////////////////////////////////////////////////////////////////////////
