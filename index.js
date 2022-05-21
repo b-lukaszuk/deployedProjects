@@ -9,9 +9,82 @@ let cursor = "&#9646;";
 let i = 0;
 let loopId = 0;
 
+let deployedProjects = [
+    [
+        "Digital and Analogue Clock",
+        "https://github.com/b-lukaszuk/fed_zegar_cyfr_analog",
+        "/deployedProjects/clockDigiAnalog/clock.html",
+    ],
+    [
+        "Movie Tiles",
+        "https://github.com/b-lukaszuk/podst_js_zadanie_zaliczeniowe",
+        "/deployedProjects/moviesTiles/moviesTiles.html",
+    ],
+    [
+        "15 puzzle game",
+        "https://github.com/b-lukaszuk/fifteen_puzzle_game",
+        "https://b-lukaszuk.github.io/fifteen_puzzle_game/",
+    ],
+    [
+        "Units converter",
+        "https://github.com/b-lukaszuk/simple_converter",
+        "https://b-lukaszuk.github.io/simple_converter/",
+    ],
+    [
+        "Simple Todos App",
+        "https://github.com/b-lukaszuk/PB_reactjs_2020_2021/tree/master/sem2_zaliczenie",
+        "https://b-lukaszuk.github.io/todosApp/#/",
+    ],
+    [
+        "Simplified Chess",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z3_10_04_2021/02/browser_version",
+        "https://b-lukaszuk.github.io/simplifiedChess/",
+    ],
+    [
+        "Memory 1",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/blob/master/s2z4_24_04_2021/01",
+        "https://b-lukaszuk.github.io/memory1/",
+    ],
+    [
+        "Memory 2",
+        "https://github.com/b-lukaszuk/memory2",
+        "https://b-lukaszuk.github.io/memory2/#/",
+    ],
+    [
+        "Simple Connection Builder-Tester",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z5_07_05_2021/01/",
+        "https://b-lukaszuk.github.io/simpleConnectionTester/",
+    ],
+    [
+        "Bouncing Ball 1",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z3_10_04_2021/03",
+        "https://b-lukaszuk.github.io/bouncingBall1/",
+    ],
+    [
+        "Bouncing Ball 1",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z4_24_04_2021/02",
+        "https://b-lukaszuk.github.io/bouncingBall2/",
+    ],
+    [
+        "Game Of Life",
+        "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z5_07_05_2021/02",
+        "https://b-lukaszuk.github.io/gameOfLife/",
+    ],
+    [
+        "Tetris",
+        "https://github.com/b-lukaszuk/PB_angular_2020_2021/tree/master/sem2_zaliczenie",
+        "https://b-lukaszuk.github.io/tetris/",
+    ],
+];
+
 ///////////////////////////////////////////////////////////////////////////////
 //                                 functions                                 //
 ///////////////////////////////////////////////////////////////////////////////
+
+/*
+div class="bash" functionality
+*/
+
 // returns arrays of substrings of lenghts from 1 to n
 // from left, e.g "ala" -> ["a", "al", "ala"]
 function getSubstringsOfLenFrom1toN(text) {
@@ -49,7 +122,44 @@ function loop() {
     loopId = setTimeout(loop, delay);
 }
 
+/*
+list of deployedProjects functionality
+*/
+
+function getHyperLink(displayedText, http) {
+    return '<a href="' + http + '">' + displayedText + "</a>";
+}
+
+function getH2(displayedText) {
+    return "<h2>" + displayedText + "<h2>";
+}
+
+function getSpanSep() {
+    return "<span> | </span>";
+}
+
+function getLi(h2Text, ghRepoHttp, deployedVersionHttp) {
+    return (
+        "<li>" +
+        getH2(h2Text) +
+        getHyperLink("GitHub repo", ghRepoHttp) +
+        getSpanSep() +
+        getHyperLink("See online", deployedVersionHttp) +
+        "</li>"
+    );
+}
+
+function getUl(lstOfDeployedProjects) {
+    let content = "";
+    lstOfDeployedProjects.forEach((p) => {
+        content += getLi(p[0], p[1], p[2]);
+    });
+    return "<ul>" + content + "<ul>";
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 //                             program execution                             //
 ///////////////////////////////////////////////////////////////////////////////
 loop();
+let projects = document.getElementById("projects");
+projects.innerHTML = getUl(deployedProjects);
