@@ -149,7 +149,7 @@ function getLi(h2Text, ghRepoHttp, deployedVersionHttp) {
     );
 }
 
-// lstOfDeployedProjects list of lists
+// lstOfDeployedProjects is a list of lists
 // each sublist contains 3 elts: name, https github, https online
 function getUl(lstOfDeployedProjects) {
     let content = "";
@@ -163,5 +163,4 @@ function getUl(lstOfDeployedProjects) {
 //                             program execution                             //
 ///////////////////////////////////////////////////////////////////////////////
 loop();
-let projects = document.getElementById("projects");
-projects.innerHTML = getUl(deployedProjects);
+putTextInHtmlEltOfId("projects", getUl(deployedProjects));
