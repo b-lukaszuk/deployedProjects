@@ -149,6 +149,8 @@ function getLi(h2Text, ghRepoHttp, deployedVersionHttp) {
     );
 }
 
+// lstOfDeployedProjects list of lists
+// each sublist contains 3 elts: name, https github, https online
 function getUl(lstOfDeployedProjects) {
     let content = "";
     lstOfDeployedProjects.forEach((p) => {
