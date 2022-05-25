@@ -77,6 +77,8 @@ let deployedProjects = [
     ],
 ];
 
+let displayedProjects = [...deployedProjects];
+
 ///////////////////////////////////////////////////////////////////////////////
 //                                 functions                                 //
 ///////////////////////////////////////////////////////////////////////////////
@@ -159,8 +161,20 @@ function getUl(lstOfDeployedProjects) {
     return "<ul>" + content + "</ul>";
 }
 
+function filterProjects(val) {
+    if (val.trim() !== "") {
+        displayedProjects = deployedProjects.filter((p) =>
+            p[0].toLocaleLowerCase().includes(val.toLocaleLowerCase())
+        );
+        putTextInHtmlEltOfId("projects", getUl(displayedProjects));
+    } else {
+        displayedProjects = [...deployedProjects];
+        putTextInHtmlEltOfId("projects", getUl(displayedProjects));
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 //                             program execution                             //
 ///////////////////////////////////////////////////////////////////////////////
 loop();
-putTextInHtmlEltOfId("projects", getUl(deployedProjects));
+putTextInHtmlEltOfId("projects", getUl(displayedProjects));

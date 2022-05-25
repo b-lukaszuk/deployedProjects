@@ -22,6 +22,16 @@
     </div>
     <hr />
     <div>
+      <p class="filter">
+        Filter projects:
+        <input
+          name="input"
+          type="text"
+          value=""
+          placeholder="type searched phase"
+          onkeyup="filterProjects(this.value)"
+        />
+      </p>
       <h1>Some of my deployed projects</h1>
       <div id="projects"></div>
     </div>
