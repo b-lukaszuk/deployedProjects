@@ -46,7 +46,7 @@ let deployedProjects = [
         "https://b-lukaszuk.github.io/memory1/",
     ],
     [
-        "Memory 2",
+        "Memory game",
         "https://github.com/b-lukaszuk/memory2",
         "https://b-lukaszuk.github.io/memory2/#/",
     ],
