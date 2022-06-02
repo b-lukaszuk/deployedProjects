@@ -31,6 +31,11 @@ let deployedProjects = [
         "https://b-lukaszuk.github.io/simple_converter/",
     ],
     [
+        "Snake game",
+        "https://github.com/b-lukaszuk/snake_game",
+        "https://b-lukaszuk.github.io/snake_game/",
+    ],
+    [
         "Simple Todos App",
         "https://github.com/b-lukaszuk/PB_reactjs_2020_2021/tree/master/sem2_zaliczenie",
         "https://b-lukaszuk.github.io/todosApp/#/",
