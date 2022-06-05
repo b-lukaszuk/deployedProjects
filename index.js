@@ -66,7 +66,7 @@ let deployedProjects = [
         "https://b-lukaszuk.github.io/bouncingBall1/",
     ],
     [
-        "Bouncing Ball 1",
+        "Bouncing Ball 2",
         "https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z4_24_04_2021/02",
         "https://b-lukaszuk.github.io/bouncingBall2/",
     ],
