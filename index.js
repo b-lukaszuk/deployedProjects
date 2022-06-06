@@ -16,6 +16,11 @@ let deployedProjects = [
         "/deployedProjects/clockDigiAnalog/clock.html",
     ],
     [
+        "Pomodoro Timer",
+        "https://github.com/b-lukaszuk/pomodoro_timer",
+        "https://b-lukaszuk.github.io/pomodoro_timer/",
+    ],
+    [
         "Movie Tiles",
         "https://github.com/b-lukaszuk/podst_js_zadanie_zaliczeniowe",
         "/deployedProjects/moviesTiles/moviesTiles.html",
