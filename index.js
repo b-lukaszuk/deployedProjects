@@ -76,6 +76,11 @@ let deployedProjects = [
     'https://b-lukaszuk.github.io/bouncingBall2/',
   ],
   [
+    'Book: RJ_BS',
+    'https://github.com/b-lukaszuk/RJ_BS_eng',
+    'https://b-lukaszuk.github.io/RJ_BS_eng/',
+  ],
+  [
     'Game Of Life',
     'https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z5_07_05_2021/02',
     'https://b-lukaszuk.github.io/gameOfLife/',
