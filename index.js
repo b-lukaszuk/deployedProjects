@@ -85,11 +85,6 @@ let deployedProjects = [
     'https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z5_07_05_2021/02',
     'https://b-lukaszuk.github.io/gameOfLife/',
   ],
-  [
-    'Tetris',
-    'https://github.com/b-lukaszuk/PB_angular_2020_2021/tree/master/sem2_zaliczenie',
-    'https://b-lukaszuk.github.io/tetris/',
-  ],
 ];
 
 let displayedProjects = [...deployedProjects];
