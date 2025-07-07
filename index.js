@@ -81,6 +81,11 @@ let deployedProjects = [
     'https://b-lukaszuk.github.io/RJ_BS_eng/',
   ],
   [
+    'Book: BS_wJ',
+    'https://github.com/b-lukaszuk/BS_wJ_eng',
+    'https://b-lukaszuk.github.io/BS_wJ_eng/',
+  ],
+  [
     'Game Of Life',
     'https://github.com/b-lukaszuk/PB_JSD_2020_2021/tree/master/s2z5_07_05_2021/02',
     'https://b-lukaszuk.github.io/gameOfLife/',
