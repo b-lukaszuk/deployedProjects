@@ -81,7 +81,7 @@ let deployedProjects = [
     'https://b-lukaszuk.github.io/RJ_BS_eng/',
   ],
   [
-    'Book: J_PRPD_eng',
+    'Book: J_PRPD',
     'https://github.com/b-lukaszuk/J_PRPD_eng',
     'https://b-lukaszuk.github.io/J_PRPD_eng/',
   ],
