@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 let text1 = '$ whoami';
 let text1Substrings = getSubstringsOfLenFrom1toN(text1);
-let text2 = 'Bartek Lukaszuk';
+let text2 = 'Bartlomiej Lukaszuk';
 let text3 = '$ ';
 let cursor = '&#9646;';
 let i = 0;
